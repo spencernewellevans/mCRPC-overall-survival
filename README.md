@@ -14,9 +14,9 @@ to death of patients. Time to death is approximated at the point where survival
 probability reaches 75%.
 
 Project Structure:
-FOLDER      CONTENTS
+FOLDER      CONTENTS<br>
 data ------ Contains original dataset, and all processed data used for training
-            in csv format. Also holds new data to be used for prediction.
+            in csv format. Also holds new data to be used for prediction.<br>
 train ----- Contains the R scripts used for variable selection and training the
             models. The included scripts also provide evaluation metrics on the
             performance of each of the models.
