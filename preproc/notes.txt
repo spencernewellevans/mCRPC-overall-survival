@@ -1,0 +1,41 @@
+Baseline Lab Values: Albumin (G/L), Total Bilirubin (uMol/L), Alkaline Phosphate (U/L), Red Blood Cells (x10^12 cells/L), Baseline Weight (Kg),
+Gleason Score at Initial Diagnosis(1-10),Age(18-64,65-74,>75), Race(Asian, Black, White, Other)
+
+
+Tumor Present in this location: PROSTATE,LYMPH_NODES,LIVER,KIDNEYS,PLEURA
+
+Prior Medication: CORTICOSTEROID,ANALGESICS,GLUCOCORTICOID,ANTI_ANDROGENS,GONADOTROPIN
+
+Procedure History: LYMPHADENECTOMY,SPINAL_CORD_SURGERY,HEAD_AND_NECK,TURP
+
+Diagnosis History: Gastrointestinal Bleeding, Myocardial Infarction, Chronic Obstructive Polmonary Disease, Deep Venous Thrombosis,
+
+Disease History: Personal Issues, Surgical Procedures, Neoplasms, Musculoskeletal/Connective Tissue, Nervous System Disorders
+
+
+
+
+
+Variables with overall missing rate >90% : CREACLCA
+Variables with overall missing rate >70% : CREACL, BUN, HGTBLCAT, SMOKE, GLEAS_DX
+Variables with overall missing rate >50% : RBC, LYM, CCRC, GLU 
+
+
+
+Omitted for low correlation: IMIDAZOLE,MHEAR,MHVASC,ABDOMINAL,COLON,MHGASTRO,DIAB,CHF,
+			     MHEYE,PATHFRAC,ACE_INHIBITORS,MHENDO,MHPSYCH,ORCHIDECTOMY
+                             BONE,CEREBACC,PROSTATECTOMY,PUD,BLADDER,ARTTHROM
+			     TARGET,NON_TARGET
+
+			     PSA,NEU,HEIGHTBL,BMI,WBC,NA,LYM,PLT,CREAT,MG,ALT,CCRC,PHOS
+			     GLU,HB,CA,CREACL,AST,LDH,TESTO,TPRO,
+
+
+
+
+
+
+sum(is.na(alldata$_____))/2070 
+
+featsel <- abs(cor(alldata[-17], alldata$DEATH, use = "p"))
+
